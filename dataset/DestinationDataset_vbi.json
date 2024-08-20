@@ -1,0 +1,62 @@
+{
+	"name": "DestinationDataset_vbi",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "dataworkspace4505",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [
+			{
+				"name": "Correlationid",
+				"type": "varchar"
+			},
+			{
+				"name": "Operationname",
+				"type": "varchar"
+			},
+			{
+				"name": "Status",
+				"type": "varchar"
+			},
+			{
+				"name": "Eventcategory",
+				"type": "varchar"
+			},
+			{
+				"name": "level",
+				"type": "varchar"
+			},
+			{
+				"name": "Time",
+				"type": "varchar"
+			},
+			{
+				"name": "Subscription",
+				"type": "varchar"
+			},
+			{
+				"name": "Eventinitiatedby",
+				"type": "varchar"
+			},
+			{
+				"name": "Resourcetype",
+				"type": "varchar"
+			},
+			{
+				"name": "Resourcegroup",
+				"type": "varchar"
+			},
+			{
+				"name": "Resource",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "PoolActivityLog"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
